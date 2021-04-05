@@ -1,0 +1,53 @@
+extends base.pug
+
+block scripts
+    script
+      include ../static/index.js
+
+block style 
+    style
+      include ../static/style.css
+ 
+
+block content 
+    
+    section#introSection
+      .container 
+        div.large Welcome to Darshan's Dance Academy
+        div.small Eat sleep dance repeat ! ! !
+
+    section#missionSection
+      h2 Our Missions
+      .card 
+        h3 Express yourself in Dance
+        .cardBox 
+          .cardImg 
+            img(src="/static/pic2.png")
+          .cardContent 
+            p Explore your potential 
+      .card 
+        h3 Anybody can Dance
+        .cardBox 
+          .cardImg 
+            img(src="/static/pic3.png")
+          .cardContent 
+            p Dance is like dreaming with your feet 
+      .card 
+        h3 For Beginners 
+        .cardBox 
+          .cardImg 
+            img(src="/static/pic4-removebg-preview.png")
+          .cardContent 
+            p Learn from the basic 
+
+    section#sponsorSection
+      h3 Our Sponsors
+      #sponsors 
+        img(src="/static/sponsor1.png", alt="Sponsor Image") 
+        img(src="/static/sponsor2.png", alt="Sponsor Image") 
+        img(src="/static/sponsor3.png", alt="Sponsor Image") 
+        img(src="/static/sponsor4.png", alt="Sponsor Image") 
+
+    //- section#videoSection 
+    //-   video(src="/static/vdo.mp4") 
+  

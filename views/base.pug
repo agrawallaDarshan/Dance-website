@@ -1,0 +1,23 @@
+//- base.pug
+doctype html
+html
+  head
+    title Darshan Dance Academy
+    link(rel='stylesheet' media='screen and (max-width:1900px)' href='../staic/phone.css')
+    block scripts
+    block style 
+  body
+    nav#navbar.top
+      ul  
+          #logo 
+            img(src="/static/pic1-removebg.png")
+            | D2u 
+          li #[a(href="/") Home ]
+          li #[a(href="/") About Us]
+          li #[a(href="/contact") Contact Us]
+          li #[a(href="/") Services]
+          li #[a(href="/") Fee Structure]
+
+    block content
+    footer 
+      | Copyrights © 2021 DarshanDanceAcademy.com | D2u.in | All Rights Reserved.       
